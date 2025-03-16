@@ -11,7 +11,6 @@ import static com.Amazon.utils.WebDriverUtils.*;
 
 public class CartPage {
 
-    // Locators
     private By cartCount = By.cssSelector("a#nav-cart");
     private By proceedToCheckoutButton = By.cssSelector("input[data-feature-id='proceed-to-checkout-action']");
     private By totalAmount = By.cssSelector("span#sc-subtotal-amount-activecart");

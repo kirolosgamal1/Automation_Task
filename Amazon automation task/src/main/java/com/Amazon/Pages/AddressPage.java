@@ -12,10 +12,7 @@ import static com.Amazon.utils.WebDriverUtils.*;
 
 public class AddressPage {
 
-    // Locators
     private By addressPopUp = By.cssSelector("div#a-popover-content-3");
-    //    private  By addNewAdress = By.id("add-new-address-popover-link");
-//    private  By addAddressButton = By.id("add-new-address-desktop-sasp-tango-link");
     private By fullNameField = By.cssSelector("input#address-ui-widgets-enterAddressFullName");
     private By phoneNumberField = By.cssSelector("input#address-ui-widgets-enterAddressPhoneNumber");
     private By streetNameField = By.cssSelector("input#address-ui-widgets-enterAddressLine1");

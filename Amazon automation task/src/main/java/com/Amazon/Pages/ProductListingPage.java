@@ -52,7 +52,7 @@ public class ProductListingPage {
 
         for (WebElement priceElement : priceElements) {
             String priceText = priceElement.getText();
-            double price = parsePrice(priceText); // Parse
+            double price = parsePrice(priceText); 
             totalPrice += price; // Add to the total
             System.out.println("Price: " + price);
         }

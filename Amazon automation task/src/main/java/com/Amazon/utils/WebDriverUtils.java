@@ -149,8 +149,7 @@ public class WebDriverUtils {
     // Helper method to verify DOM attachment without using locators
     private static boolean isElementAttached(WebElement element) {
         try {
-            // Lightweight check for staleness
-            element.isEnabled(); // Any harmless method call
+            element.isEnabled(); 
             return true;
         } catch (StaleElementReferenceException e) {
             return false;

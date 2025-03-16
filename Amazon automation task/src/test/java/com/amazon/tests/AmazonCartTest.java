@@ -77,7 +77,7 @@ public class AmazonCartTest {
         Assert.assertEquals(cartCount, clickedAddToCart, "Error! Clicked add to cart button is not eqaul to items count on cart page");
         Assert.assertEquals(totalPriceOnCartPage, pricesExpectedFromProductListing, "Error! Total price on cart page doesn't match the sum of prices from products page");
 
-        // Step 6: Proceed to Checkout
+        // Proceed to Checkout
         cartPage.proceedToCheckout();
         addressPage.declinePrime();
         if (checkoutPage.isCheckoutHeaderVisible()) { //check if secure checkout header is visible
