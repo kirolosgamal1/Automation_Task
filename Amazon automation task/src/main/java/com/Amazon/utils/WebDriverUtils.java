@@ -138,7 +138,6 @@ public class WebDriverUtils {
     }
 
     public static void jsClick(WebElement element) {
-        // Check if the element is still attached to the DOM (non-stale)
         if (isElementAttached(element)) {
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
         } else {
@@ -146,7 +145,6 @@ public class WebDriverUtils {
         }
     }
 
-    // Helper method to verify DOM attachment without using locators
     private static boolean isElementAttached(WebElement element) {
         try {
             element.isEnabled(); 
